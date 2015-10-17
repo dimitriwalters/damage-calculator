@@ -1,4 +1,22 @@
-input[type="text"] {
+.stats-menu {
+    display: inline-block;
+}
+
+#first-stats input[type="text"] {
     left: 75px;
+    position: absolute;
+}
+
+#damage1 {
+    position: absolute;
+    margin-left: 5px;
+}
+
+#second-stats {
+    margin-left: 140px;
+}
+
+#second-stats input[type="text"] {
+    left: 287px;
     position: absolute;
 }

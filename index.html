@@ -9,12 +9,22 @@
 
 <body>
     <h3>Pokemon Damage Calculator (simplified)</h3>
-    <p>Attack: <input type="text" id="attack" /></p>
-    <p>Defense: <input type="text" id="defense" /></p>
-    <p>Base: <input type="text" id="base" /></p>
-    <p>Modifier: <input type="text" id="modifier" /></p>
-    <button type="button" id="calc-button">Calculate!</button>
-    <p>Damage: <span id="damage"></span></p>
+    <div id="first-stats" class="stats-menu">
+      <p>Attack: <input type="text" id="attack1" /></p>
+      <p>Defense: <input type="text" id="defense1" /></p>
+      <p>Base: <input type="text" id="base1" /></p>
+      <p>Modifier: <input type="text" id="modifier1" /></p>
+      <button type="button" class="calc-button" data-stats="1">Calculate!</button>
+      <p>Damage: <span id="damage1"></span></p>
+    </div>
+    <div id="second-stats" class="stats-menu">
+      <p>Attack: <input type="text" id="attack2" /></p>
+      <p>Defense: <input type="text" id="defense2" /></p>
+      <p>Base: <input type="text" id="base2" /></p>
+      <p>Modifier: <input type="text" id="modifier2" /></p>
+      <button type="button" class="calc-button" data-stats="2">Calculate!</button>
+      <p>Damage: <span id="damage2"></span></p>
+    </div>
 
     <h3>Random Number Generator</h3>
     <button type="button" id="random-button">Generate!</button>

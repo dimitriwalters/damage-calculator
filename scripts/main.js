@@ -1,13 +1,14 @@
 (function() {
     var attack, defense, base, modifier, damage;
-    $('#calc-button').click(function() {
-        attack = parseInt($('#attack').val());
-        defense = parseInt($('#defense').val());
-        base = parseInt($('#base').val());
-        modifier = parseFloat($('#modifier').val());
+    $('.calc-button').click(function() {
+        var statsNumber = $(this).data("stats");
+        attack = parseInt($('#attack' + statsNumber).val());
+        defense = parseInt($('#defense' + statsNumber).val());
+        base = parseInt($('#base' + statsNumber).val());
+        modifier = parseFloat($('#modifier' + statsNumber).val());
         damage = (attack/defense) * base * modifier;
 
-        $('#damage').text(damage);
+        $('#damage' + statsNumber).text(damage);
     });
 
     $('#random-button').click(function() {
