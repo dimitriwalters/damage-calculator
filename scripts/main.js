@@ -1,7 +1,8 @@
 (function() {
-    var attack, defense, base, multiple, modifer, damage, statsNumber;
+    var level, attack, defense, base, multiple, modifer, damage, statsNumber;
     $('.calc-button').click(function() {
         statsNumber = $(this).data("stats");
+        level = parseInt($('#level' + statsNumber).val());
         attack = parseInt($('#attack' + statsNumber).val());
         defense = parseInt($('#defense' + statsNumber).val());
         base = parseInt($('#base' + statsNumber).val());
@@ -11,7 +12,7 @@
             modifier *= 1.5;
         }
         modifier *= randomit.generateNumber(85, 100)/100;
-        damage = ((210/250) * (attack/defense) * base + 2) * modifier;
+        damage = (((2 * level + 10)/250) * (attack/defense) * base + 2) * modifier;
 
         $('#damage' + statsNumber).text(damage);
     });

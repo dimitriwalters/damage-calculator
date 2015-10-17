@@ -10,6 +10,7 @@
 <body>
     <h3>Pokemon Damage Calculator</h3>
     <div id="first-stats" class="stats-menu">
+      <p>Level: <input type="text" id="level1" value="100" /></p>
       <p>Attack: <input type="text" id="attack1" value="350" /></p>
       <p>Defense: <input type="text" id="defense1" value="350" /></p>
       <p>Base: <input type="text" id="base1" value="90" /></p>
@@ -18,6 +19,7 @@
       <button type="button" class="calc-button" data-stats="1">Calculate!</button>
     </div>
     <div id="second-stats" class="stats-menu">
+      <p>Level: <input type="text" id="level2" value="100" /></p>
       <p>Attack: <input type="text" id="attack2" value="350" /></p>
       <p>Defense: <input type="text" id="defense2" value="350" /></p>
       <p>Base: <input type="text" id="base2" value="90" /></p>
@@ -25,7 +27,7 @@
       <p>Damage: <span id="damage2"></span></p>
       <button type="button" class="calc-button" data-stats="2">Calculate!</button>
     </div>
-    <p>Notes: multiple is STAB/Type multiplier, assuming level 100</p>
+    <p>Note: multiple is STAB/Type multiplier</p>
 
     <h3>Random Number Generator</h3>
     <p>Number (1-100): <span id="number"></span></p>
