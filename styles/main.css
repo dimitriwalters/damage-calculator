@@ -1,3 +1,7 @@
+h3 {
+    margin-bottom: 0;
+}
+
 .stats-menu {
     display: inline-block;
 }
