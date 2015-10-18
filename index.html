@@ -15,6 +15,7 @@
       <p>Defense: <input type="text" id="defense1" value="350" /></p>
       <p>Base: <input type="text" id="base1" value="90" /></p>
       <p>Multiple: <input type="text" id="multiple1" value="3" /></p>
+      <p class="hp" style="display:none">HP: <input type="text" id="hp1" value="350" /></p>
       <p>Damage: <span id="damage1"></span></p>
       <button type="button" class="calc-button" data-stats="1">Calculate!</button>
     </div>
@@ -24,10 +25,12 @@
       <p>Defense: <input type="text" id="defense2" value="350" /></p>
       <p>Base: <input type="text" id="base2" value="90" /></p>
       <p>Multiple: <input type="text" id="multiple2" value="3" /></p>
+      <p class="hp" style="display:none">HP: <input type="text" id="hp2" value="350" /></p>
       <p>Damage: <span id="damage2"></span></p>
       <button type="button" class="calc-button" data-stats="2">Calculate!</button>
     </div>
     <p>Note: multiple is STAB/Type multiplier</p>
+    <p id="show-hp-label">Show HP: </p><input type="checkbox" id="show-hp-checkbox" />
 
     <h3>Random Number Generator</h3>
     <p>Number (1-100): <span id="number"></span></p>

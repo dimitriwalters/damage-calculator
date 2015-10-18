@@ -24,3 +24,7 @@ h3 {
     left: 287px;
     position: absolute;
 }
+
+#show-hp-label {
+    display: inline;
+}
